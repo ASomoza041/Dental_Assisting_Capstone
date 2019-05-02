@@ -8,7 +8,7 @@ Date: 4-3-19
 */
 
 
-html { 
+html {
     background-image: url(01.\ Dental\ Assisting.jpg);
     background-size: contain;
     width: 100%;
@@ -25,11 +25,50 @@ body {
     border: 5px solid black;
 }
 
+section#guy {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+section#guy p {
+    display: inline;
+    float: right;
+    font-size: 20px;
+}
+
+section#highway {
+    background-color: rgba(132, 132, 132, 0.757);
+    color: whitesmoke;
+    margin: 20px;
+    float: left;
+    padding: 90px;
+    width: 9.5%;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+section#highway p {
+    font-size: 26px;
+    text-align: center;
+}
+
 h1 {
     font-size: 30px;
     display: inline-block;
     float: right;
-    width: 75%;
+    width: 74%;
+    text-align: right;
+    padding: 4px;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: right;
+    padding: 0px 4px 0px 4px;
+    background-color: gray;
+    color: whitesmoke;
+
 }
 
 a#insta {
@@ -47,16 +86,21 @@ img#Logo {
     display: inline-block;
 }
 
+img#guypic {
+    width: 40%;
+    align: right;
+}
+
 footer {
     position: fixed;
-  bottom: 0;
-  width: 80%;
-  padding: 5px 0px 5px 0px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(56, 56, 56);
-  color: white;
-  text-align: center;
+    bottom: 0;
+    width: 80%;
+    padding: 5px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
 }
 
 
