@@ -10,19 +10,19 @@ Date: 4-3-19
 
 html {
     background-image: url(01.\ Dental\ Assisting.jpg);
-    background-size: contain;
+    background-size: 100%;
     width: 100%;
     height: 100%;
 }
 
 
 body {
-    background-color: rgba(255, 209, 71, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     height: 100%;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 section#guy {
@@ -37,21 +37,8 @@ section#guy p {
     font-size: 20px;
 }
 
-section#highway {
-    background-color: rgba(132, 132, 132, 0.757);
-    color: whitesmoke;
-    margin: 20px;
-    float: left;
-    padding: 90px;
-    width: 9.5%;
-    border-radius: 100%;
-    display: inline-block;
-}
 
-section#highway p {
-    font-size: 26px;
-    text-align: center;
-}
+
 
 h1 {
     font-size: 30px;
@@ -66,19 +53,24 @@ h2 {
     font-size: 26px;
     text-align: right;
     padding: 0px 4px 0px 4px;
-    background-color: gray;
-    color: whitesmoke;
-
+     background-color: rgb(56, 56, 56);
+    color: whitesmoke; 
 }
 
-a#insta {
-    color: orange;
+a.fa {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+  font-size: 18px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
-a#insta:hover {
-    color: whitesmoke;
+a.fa:hover {
+    color: white;
 }
-
 
 
 img#Logo {
@@ -123,7 +115,14 @@ header > nav > ul > li {
     padding: 7px 0px 7px 0px;
 }
 
-header > nav > ul > li {
-    text-decoration: none;
+header > nav > ul > li > a{ 
+    text-decoration: none; 
+    color: black;
 }
+
+header > nav > ul > li > a:active{ 
+    text-decoration: underline; 
+    color: rgb(77, 77, 224);
+}
+
 
