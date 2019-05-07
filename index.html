@@ -11,8 +11,10 @@ Date: 4-3-19
      <meta charset="utf-8" />
      <title>Dental Assisting</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- The two links below link the index file to the two CSS files so the style rules within them can affect the elements on this page. -->
      <link rel="stylesheet" href="reset.css" />
      <link rel="stylesheet" href="main.css" />
+
      <link rel="icon" href="west_mec_arrow_orange_l8B_icon.ico" />
      <!-- link below is an icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +25,7 @@ Date: 4-3-19
          <img src="WM-Logo-Black.png" alt="Logo" id="Logo">
          <h1>NorthWest Campus</h1>
          <h2>Dental Assisting</h2>
+         <!-- This horizontal nav holds the links for our other pages. -->
          <nav id="hnav">
              <ul>
                  <li>
@@ -40,7 +43,7 @@ Date: 4-3-19
              </ul>
          </nav>
      </header>
-
+     <!-- This section tag is to hold the main content of the page. This holds the majority of what the user will be reading. We used a lot of ID's/classes to affect later in the main.css file. We did use some inline styles for our list as we couldn't seem to affect it in the CSS file. However, the styles work the same. -->
      <section id="GS">
          <h1 id="hands">A hands on experience for students!</h1>
          <p id="desc">This program provides a in-depth training for a future career in the dental industry.<br>
@@ -57,10 +60,11 @@ Date: 4-3-19
          </p>
      </section>
 
+     <!-- This aside tag is mainly to hold the video on the home page. We used inline styles to style the video to adjust the size and add controls for the user to control the video. -->
      <aside id="vid">
          <video width="320" height="240" controls>
              <source src="NWcampus.mp4" type="video/mp4">
-             Your browser does not support the video tag.
+             Your browser does not support the video format.
          </video>
          <p>
              A short video about the beautiful NorthWest Campus.
@@ -77,9 +81,10 @@ Date: 4-3-19
      </section>
 
 
-
+     <!-- This script tag links the main.js file to the index. It is put at the bottom as a more effective way to run the code in the Js file after the rest of the content loads first. -->
      <script src="main.js"></script>
  </body>
+ <!-- This footer holds the adress of the school as well ad a link the the dental assisting instagram. -->
  <footer>
      13201 W. Grand Avenue Surprise, AZ 85374 &nbsp; &nbsp;
      <a href="https://www.instagram.com/westmecnwcdental/" class="fa fa-instagram"></a>
