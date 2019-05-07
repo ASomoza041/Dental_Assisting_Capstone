@@ -47,3 +47,33 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+/* Navigation Styles */
+
+header>nav {
+    display: table;
+    width: 100%;
+}
+
+header>nav>ul {
+    display: table-row;
+    list-style-type: none;
+    background-color: orange;
+}
+
+header>nav>ul>li {
+    display: table-cell;
+    text-align: center;
+    padding: 7px 0px 7px 0px;
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+header>nav>ul>li>a:active {
+    text-decoration: underline;
+    color: rgb(77, 77, 224);
+}

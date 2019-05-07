@@ -35,6 +35,10 @@ header h1 {
     padding: 4px;
 }
 
+h1#hands {
+    font-size: 30px;
+}
+
 header h2 {
     font-size: 26px;
     text-align: right;
@@ -47,8 +51,10 @@ section {
     margin: 10px 20px 10px 20px;
 }
 
-section p.desc {
+
+section p#desc {
     margin: 5px;
+    font-size: 20px;
 }
 
 a.fa {
@@ -113,4 +119,8 @@ header>nav>ul>li>a {
 header>nav>ul>li>a:active {
     text-decoration: underline;
     color: rgb(77, 77, 224);
+}
+
+header>nav>ul>li>a:hover {
+    color: white;
 }
