@@ -25,22 +25,8 @@ body {
     border: 2px solid black;
 }
 
-section#guy {
-    display: inline-block;
-    float: left;
-    width: 50%;
-}
 
-section#guy p {
-    display: inline;
-    float: right;
-    font-size: 20px;
-}
-
-
-
-
-h1 {
+header h1 {
     font-size: 30px;
     display: inline-block;
     float: right;
@@ -49,23 +35,31 @@ h1 {
     padding: 4px;
 }
 
-h2 {
+header h2 {
     font-size: 26px;
     text-align: right;
     padding: 0px 4px 0px 4px;
-     background-color: rgb(56, 56, 56);
-    color: whitesmoke; 
+    background-color: rgb(56, 56, 56);
+    color: whitesmoke;
+}
+
+section {
+    margin: 10px 20px 10px 20px;
+}
+
+section p.desc {
+    margin: 5px;
 }
 
 a.fa {
     background-color: orange;
     color: black;
     padding: 10px;
-  font-size: 18px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    font-size: 18px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 a.fa:hover {
@@ -78,10 +72,6 @@ img#Logo {
     display: inline-block;
 }
 
-img#guypic {
-    width: 40%;
-    align: right;
-}
 
 footer {
     position: fixed;
@@ -98,31 +88,29 @@ footer {
 
 /* Navigation Styles */
 
-header > nav {
+header>nav {
     display: table;
     width: 100%;
 }
 
-header > nav > ul {
+header>nav>ul {
     display: table-row;
     list-style-type: none;
     background-color: orange;
 }
 
-header > nav > ul > li {
+header>nav>ul>li {
     display: table-cell;
     text-align: center;
     padding: 7px 0px 7px 0px;
 }
 
-header > nav > ul > li > a{ 
-    text-decoration: none; 
+header>nav>ul>li>a {
+    text-decoration: none;
     color: black;
 }
 
-header > nav > ul > li > a:active{ 
-    text-decoration: underline; 
+header>nav>ul>li>a:active {
+    text-decoration: underline;
     color: rgb(77, 77, 224);
 }
-
-
