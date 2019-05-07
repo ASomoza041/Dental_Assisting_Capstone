@@ -10,7 +10,8 @@ Date: 4-3-19
 
 html {
     background-image: url(01.\ Dental\ Assisting.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
@@ -28,9 +29,9 @@ body {
 
 header h1 {
     font-size: 30px;
-    display: inline-block;
-    float: right;
-    width: 74%;
+    display: flex;
+    /* float: right; */
+    width: 100%;
     text-align: right;
     padding: 4px;
 }
@@ -47,14 +48,40 @@ header h2 {
     color: whitesmoke;
 }
 
-section {
-    margin: 10px 20px 10px 20px;
+section#GS {
+    width: 70%;
+    height: 80%;
+    display: inline-block;
 }
 
-
 section p#desc {
-    margin: 5px;
+    margin: 20px 10px 20px 10px;
     font-size: 20px;
+}
+
+section.extra {
+    position: fixed;
+    bottom: 50px;
+    width: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 45px;
+}
+
+aside#vid {
+    background-color: rgba(248, 166, 15, 0.699);
+    display: inline-block;
+    float: right;
+    width: 30%;
+    height: 80%;
+}
+
+aside#vid video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a.fa {
@@ -76,6 +103,10 @@ a.fa:hover {
 img#Logo {
     width: 25%;
     display: inline-block;
+}
+
+img#guypic {
+    width: 70%;
 }
 
 
