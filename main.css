@@ -16,6 +16,12 @@ html {
     height: 100%;
 }
 
+html::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 body {
     content: "";
@@ -27,6 +33,12 @@ body {
     width: 80%;
     height: 100%;
     border: 2px solid black;
+}
+
+body::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -59,6 +71,12 @@ section#GS {
 
 }
 
+section#GS::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 
 section#GS p#desc {
@@ -88,6 +106,12 @@ aside#vid {
     float: right;
     width: 30%;
     height: 100%;
+}
+
+aside#vid::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 aside#vid video {
@@ -136,15 +160,26 @@ img#guypic {
 
 
 footer {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: fixed;
     bottom: 0;
     width: 80%;
-    padding: 5px 0px 5px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(56, 56, 56);
-    color: white;
-    text-align: center;
 }
 
 

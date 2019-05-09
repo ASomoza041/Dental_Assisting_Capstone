@@ -9,7 +9,8 @@ Date: 4-30-19
 
 html {
     background-image: url(02.\ Dental\ Assisting.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
@@ -110,20 +111,26 @@ a.infoLink:hover {
 
 
 footer {
+    text-align: center;
     background-color: rgb(56, 56, 56);
     color: white;
-    padding: 8px;
-}
-
-footer a {
-    display: block;
-    width: 100%
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 footer::after {
     content: "";
     clear: both;
     display: table;
+}
+
+#footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
 }
 
 /* Navigation Styles */
