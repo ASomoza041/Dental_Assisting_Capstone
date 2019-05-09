@@ -9,6 +9,7 @@ Date: 4-3-19
 
 
 html {
+    position: fixed;
     background-image: url(01.\ Dental\ Assisting.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +25,7 @@ html::after {
 
 
 body {
-    content: "";
+    overflow: scroll content: "";
     display: table;
     clear: both;
     background-color: rgba(255, 255, 255, 0.8);
@@ -90,13 +91,7 @@ section#GS p#west {
 }
 
 section.extra {
-    position: fixed;
-    bottom: 50px;
-    width: 50%;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+
     font-size: 45px;
 }
 
@@ -116,8 +111,7 @@ aside#vid::after {
 
 aside#vid video {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6px auto 6px auto;
 }
 
 a#westLink {
