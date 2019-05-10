@@ -7,10 +7,11 @@ Date: 4-3-19
 
 */
 
-
+/* Main body styles */
+/* The main body styles are styles for the html and body tags. The styles affect the background of both tags and affect the widths and height of   */
 html {
-    position: fixed;
-    background-image: url(01.\ Dental\ Assisting.jpg);
+
+    background: url(01.\ Dental\ Assisting.jpg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -25,7 +26,7 @@ html::after {
 
 
 body {
-    overflow: scroll content: "";
+    content: "";
     display: table;
     clear: both;
     background-color: rgba(255, 255, 255, 0.8);
@@ -91,7 +92,7 @@ section#GS p#west {
 }
 
 section.extra {
-
+    display: inline-block;
     font-size: 45px;
 }
 
@@ -112,6 +113,11 @@ aside#vid::after {
 aside#vid video {
     display: block;
     margin: 6px auto 6px auto;
+}
+
+section#GS,
+aside#vid {
+    padding-bottom: 50px;
 }
 
 a#westLink {
@@ -209,3 +215,16 @@ header>nav>ul>li>a:active {
 header>nav>ul>li>a:hover {
     color: white;
 }
+
+/* ===============
+    Media Queries
+   ===============*/
+
+/* mobile Styles */
+@media only screen and (max-width: 480px) {}
+
+/* tablet Styles*/
+@media only screen and (min-width: 481px) and (max-width: 750px) {}
+
+/* Desktop Styles*/
+@media only screen and (min-width: 768px) {}

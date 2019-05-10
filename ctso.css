@@ -121,3 +121,17 @@ header>nav>ul>li>a:active {
 header>nav>ul>li>a:hover {
     color: white;
 }
+
+
+/* ===============
+    Media Queries
+   ===============*/
+
+/* mobile Styles */
+@media only screen and (max-width: 480px) {}
+
+/* tablet Styles*/
+@media only screen and (min-width: 481px) and (max-width: 750px) {}
+
+/* Desktop Styles*/
+@media only screen and (min-width: 768px) {}
