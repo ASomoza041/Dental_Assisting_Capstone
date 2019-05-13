@@ -17,10 +17,15 @@
 <body>
     <header>
         <img src="WM-Logo-Black.png" alt="Logo" id="Logo">
+        <!-- The div holds the text for the clock. -->
+        <div id="clock"></div>
         <h1>NorthWest Campus</h1>
         <h2>Dental Assisting CTSO</h2>
         <!-- This horizontal nav holds the links for our other pages. -->
         <nav id="hnav">
+            <a href="#" id="navicon">
+                <img src="navicon3.png" alt="">
+            </a>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -37,11 +42,50 @@
             </ul>
         </nav>
     </header>
-    <script src="main.js"></script>
+    <!-- These section tags hold the main content of the page. They hold the majority of what the user will be reading. We used a lot of ID's/classes to affect later in the main.css file.-->
+    <section id="ctso">
+        <h2 class="titles">What is a CTSO?</h2>
+        <p id="ctsoDesc" class="para">A CTSO(Career and Technical Student Organizations) enhance student learning
+            through
+            contextual
+            instruction, leadership and personal development, applied learning and real world application.
+            CTSO's are incorporated into West-Mec's CTE programs in order to enhance student's
+            employability
+            and career
+            skills and concepts through the application and engagement of students in hands-on demonstrations and real
+            life and/or work experiences. A CTSO provides opportunities in gaining the skills needed to be successful
+            through CTSO activities, programs and competitive events. </p>
+    </section>
+
+    <section id="hosa">
+        <h2 class="titles">HOSA</h2>
+        <p id="bottomP" class="para">As the Dental Assisting program is within the medical field, naturally, it's CTSO
+            would be HOSA
+            (Health
+            Occupations Students of America). HOSA's focus is to promote career opportunities in the health care
+            industry and to enhance the delivery of quality health care to all people. HOSA provides a unique program of
+            leadership development, motivation, and recognition exclusively for secondary, postsecondary, adult, and
+            collegiate students enrolled in HSE programs.</p>
+
+    </section>
+
+
+    <!-- This p tag holds links to other sites for additional information. -->
+    <p id="more">To read more about <a href="http://www.ctsos.org/" class="soLinks">CTSO's</a> or <a
+            href="http://www.ctsos.org/ctsos-2/hosa/" class="soLinks">HOSA</a>, click the links!</p>
+
+
+
+    <!-- This script tag links the ctso.js file to the file. It is put at the bottom as a more effective way to run the code in the Js file after the rest of the content loads first. -->
+
+    <script src="ctso.js"></script>
 </body>
-<footer>
-    13201 W. Grand Avenue Surprise, AZ 85374 &nbsp; &nbsp;
-    <a href="https://www.instagram.com/westmecnwcdental/" class="fa fa-instagram"></a>
-</footer>
+<div id="footer">
+    <!-- This footer holds the adress of the school as well ad a link the the dental assisting instagram. -->
+    <footer>
+        13201 W. Grand Avenue Surprise, AZ 85374 &nbsp; &nbsp;
+        <a href="https://www.instagram.com/westmecnwcdental/" class="fa fa-instagram"></a>
+    </footer>
+</div>
 
 </html>

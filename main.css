@@ -7,11 +7,12 @@ Date: 4-3-19
 
 */
 
-/* Main body styles */
-/* The main body styles are styles for the html and body tags. The styles affect the background of both tags and affect the widths and height of   */
+/* Page styles */
+/* These styles are for the general objects on the page. This mean anything that isn't a link. The styles mainly affect backgrounds, fonts, and spacings for the tags */
 html {
 
-    background: url(01.\ Dental\ Assisting.jpg) fixed;
+    background: url(image1.jpg) fixed;
+    background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -22,7 +23,9 @@ html::after {
     content: "";
     display: table;
     clear: both;
+
 }
+
 
 
 body {
@@ -97,7 +100,7 @@ section.extra {
 }
 
 aside#vid {
-    background-color: rgba(248, 166, 15, 0.699);
+
     display: inline;
     float: right;
     width: 30%;
@@ -119,6 +122,62 @@ section#GS,
 aside#vid {
     padding-bottom: 50px;
 }
+
+div#clock {
+    font-size: 25px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+
+
+
+img#Logo {
+    width: 25%;
+    display: inline-block;
+}
+
+img#guypic {
+    padding: 10px;
+    display: block;
+    width: 70%;
+    margin: 40px auto 5px auto;
+}
+
+figcaption {
+    width: 100%;
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+
+/* link Styles */
+/* The link styles are for any link on the page. These styles form the Hnav and add styles to the smaller links throughout the page. Consist mainly of color and spacing styles. */
 
 a#westLink {
     color: rgb(230, 158, 24);
@@ -145,45 +204,10 @@ a.fa:hover {
     color: white;
 }
 
-
-img#Logo {
-    width: 25%;
-    display: inline-block;
+a#navicon {
+    display: none;
+    width: 10%;
 }
-
-img#guypic {
-    padding: 10px;
-    display: block;
-    width: 70%;
-    margin: 40px auto 40px auto;
-}
-
-
-footer {
-    text-align: center;
-    background-color: rgb(56, 56, 56);
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-footer::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#footer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
-    bottom: 0;
-    width: 80%;
-}
-
-
-/* Navigation Styles */
 
 header>nav {
     display: table;
@@ -219,12 +243,135 @@ header>nav>ul>li>a:hover {
 /* ===============
     Media Queries
    ===============*/
+/* The media queries are personalized styles for each size viewport inluding mobile, tablet, and desktop. */
 
-/* mobile Styles */
-@media only screen and (max-width: 480px) {}
-
-/* tablet Styles*/
-@media only screen and (min-width: 481px) and (max-width: 750px) {}
 
 /* Desktop Styles*/
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 901px) {
+    aside#vid {
+        background-color: rgba(248, 166, 15, 0.699);
+    }
+}
+
+
+
+
+
+/* tablet Styles*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    aside#vid {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: block;
+        width: 100%;
+    }
+
+    aside#vid p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    nav#hnav {
+        width: 100%;
+    }
+
+    nav#hnav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav#hnav ul li {
+        display: inline-block;
+        width: 23.99%;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a#navicon:hover+ul,
+    nav#hnav ul:hover {
+        display: block;
+    }
+}
+
+
+/* mobile Styles */
+@media only screen and (max-width: 600px) {
+    html {
+        width: 100%;
+    }
+
+    header h1 {
+        padding: 0px;
+    }
+
+    body {
+
+        width: 100%;
+        border: none;
+        margin: 0px;
+        height: 100%;
+    }
+
+
+    section#GS {
+        width: 80%;
+
+    }
+
+    aside#vid {
+        background-color: rgba(255, 255, 255, 0.33);
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+
+
+    aside#vid p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    div#footer {
+        width: 100%;
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    nav#hnav {
+        width: 100%;
+    }
+
+    nav#hnav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav#hnav ul li {
+        display: inline-block;
+        width: 23.99%;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a#navicon:hover+ul,
+    nav#hnav ul:hover {
+        display: block;
+    }
+
+
+}

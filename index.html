@@ -18,16 +18,22 @@ Date: 4-3-19
      <link rel="icon" href="west_mec_arrow_orange_l8B_icon.ico" />
      <!-- link below is an icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  </head>
 
  <body>
 
      <header>
          <img src="WM-Logo-Black.png" alt="Logo" id="Logo">
+         <!-- The div holds the text for the clock. -->
+         <div id="clock"></div>
          <h1>NorthWest Campus</h1>
          <h2>Dental Assisting</h2>
          <!-- This horizontal nav holds the links for our other pages. -->
          <nav id="hnav">
+             <a href="#" id="navicon">
+                 <img src="navicon3.png" alt="">
+             </a>
              <ul>
                  <li>
                      <a href="index.html">Home</a>
@@ -46,20 +52,16 @@ Date: 4-3-19
      </header>
      <!-- This section tag is to hold the main content of the page. This holds the majority of what the user will be reading. We used a lot of ID's/classes to affect later in the main.css file. We did use some inline styles for our list as we couldn't seem to affect it in the CSS file. However, the styles work the same. -->
      <section id="GS">
-         <h2 class="hands">A hands on experience for students!</h2>
+         <h2 class="hands">What is West-Mec?</h2>
          <p id="west">
              <a id="westLink" href="https://west-mec.edu/">West-Mec (Western Maricopa Education Center)</a>, is
-             a
-             public
-             school
-             district that provides
-             innovative career
-             and technical education (CTE) programs that prepare students to enter the workforce and pursue
-             continuing
-             education. Students will learn from experienced teachers who have worked in the field.
+             a public school district that provides innovative career and technical education (CTE) programs that
+             prepare students to enter the workforce and pursue continuing education. Students will learn from
+             experienced teachers who have worked in the program's field.
          </p>
-         <h2 class="hands">What is Dental Assisting?</h2>
-         <p id="desc">The Dental Assisting program provides a in-depth training for a future career in the
+         <h2 class="hands">What is the Dental Assisting program?</h2>
+         <p id="desc">The Dental Assisting program provides in-depth training and official certifications for a future
+             career in the
              dental
              industry.
              Students will <strong>learn how to assist medical proffesionals with:</strong>
@@ -87,8 +89,12 @@ Date: 4-3-19
              A short video about the beautiful NorthWest Campus.
          </p>
 
+         <figure>
+             <img id="guypic" src="dottie.png" alt="">
+             <figcaption>(Above: Dottie Wittman, Dental Assisting Instructor)</figcaption>
+         </figure>
 
-         <img id="guypic" src="12pic.png" alt="">
+
 
 
      </aside>

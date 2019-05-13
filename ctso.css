@@ -7,11 +7,23 @@ Date: 4-30-19
 
 */
 
+/* Page styles */
+/* These styles are for the general objects on the page. This mean anything that isn't a link. The styles mainly affect backgrounds, fonts, and spacings for the tags */
+
 html {
-    background-image: url(02.\ Dental\ Assisting.jpg);
-    background-size: 100%;
+
+    background: url(image4.jpg) fixed;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+}
+
+html::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 body {
@@ -43,28 +55,39 @@ header h2 {
     color: whitesmoke;
 }
 
+div#clock {
+    font-size: 25px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+h2.titles {
+    font-size: 30px;
+    margin: 10px 10px 20px 10px;
+}
+
+
+
+p.para {
+    font-size: 18px;
+    margin: 0px 15px 30px 15px;
+    text-indent: 15px;
+    line-height: 20px;
+
+}
+
+p#more {
+    text-align: center;
+    margin: 20px
+}
+
 
 img#Logo {
     width: 25%;
     display: inline-block;
 }
-
-
-a.fa {
-    background-color: orange;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-a.fa:hover {
-    color: white;
-}
-
 
 footer {
     text-align: center;
@@ -89,7 +112,40 @@ footer::after {
     width: 80%;
 }
 
-/* Navigation Styles */
+/* link Styles */
+/* The link styles are for any link on the page. These styles form the Hnav and add styles to the smaller links throughout the page. Consist mainly of color and spacing styles. */
+
+a.soLinks {
+    color: orange;
+    text-decoration: none;
+}
+
+a.soLinks:hover {
+    color: rgb(153, 99, 0);
+    text-decoration: underline;
+}
+
+
+a.fa {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+a.fa:hover {
+    color: white;
+}
+
+
+a#navicon {
+    display: none;
+    width: 10%;
+}
 
 header>nav {
     display: table;
@@ -126,12 +182,94 @@ header>nav>ul>li>a:hover {
 /* ===============
     Media Queries
    ===============*/
+/* The media queries are personalized styles for each size viewport inluding mobile, tablet, and desktop. */
 
-/* mobile Styles */
-@media only screen and (max-width: 480px) {}
-
-/* tablet Styles*/
-@media only screen and (min-width: 481px) and (max-width: 750px) {}
 
 /* Desktop Styles*/
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 900px) {}
+
+
+/* tablet Styles*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    a#navicon {
+        display: block;
+    }
+
+    nav#hnav {
+        width: 100%;
+    }
+
+    nav#hnav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav#hnav ul li {
+        display: inline-block;
+        width: 23.99%;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a#navicon:hover+ul,
+    nav#hnav ul:hover {
+        display: block;
+    }
+
+}
+
+
+/* mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    html {
+        width: 100%;
+    }
+
+    header h1 {
+        padding: 0px;
+    }
+
+    body {
+
+        width: 100%;
+        border: none;
+        margin: 0px;
+        height: 100%;
+    }
+
+    div#footer {
+        width: 100%;
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    nav#hnav {
+        width: 100%;
+    }
+
+    nav#hnav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav#hnav ul li {
+        display: inline-block;
+        width: 23.99%;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a#navicon:hover+ul,
+    nav#hnav ul:hover {
+        display: block;
+    }
+
+}

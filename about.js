@@ -2,10 +2,6 @@
 
 // Author: Alex A. Somoza    Date: May 11, 2019
 
-
-//The first event handler will say "hi" when the page loads
-window.onload = alert("Say hello to West-mec!");
-
 // The event handler and function below will run when the window loads and will run every function, which will set up the window.
 window.onload = setUp;
 

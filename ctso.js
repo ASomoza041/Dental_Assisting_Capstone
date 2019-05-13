@@ -1,17 +1,15 @@
 "use strict";
 
-// Author: Alex A. Somoza    Date: May 11, 2019
+// Author: Alex Somoza   Date: May 12, 2019
 
-
-//The first event handler will say "hi" when the page loads
-window.onload = alert("Say hello to West-mec!");
 
 // The event handler and function below will run when the window loads and will run every function, which will set up the window.
-window.onload = setUp;
+window.onload = start;
 
-function setUp() {
+function start() {
     clock();
 }
+
 
 // This function creates a real-time clock that will update every second.
 function clock() {

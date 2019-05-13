@@ -17,9 +17,15 @@
 <body>
     <header>
         <img src="WM-Logo-Black.png" alt="Logo" id="Logo">
+        <!-- The div holds the text for the clock. -->
+        <div id="clock"></div>
         <h1>NorthWest Campus</h1>
         <h2>About Dental Assisting</h2>
+        <!-- This horizontal nav holds the links for our other pages. -->
         <nav id="hnav">
+            <a href="#" id="navicon">
+                <img src="navicon3.png" alt="">
+            </a>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -37,13 +43,26 @@
         </nav>
     </header>
     <h1 id="hdetail">Here are the details!</h1>
+    <!-- This section tag is to hold the main content of the page. This holds the majority of what the user will be reading. We used a lot of ID's/classes to affect later in the main.css file.-->
     <section id="details">
-
         <div id="infolist">
             <ul>
-                <li class="titleList">Who are we looking for?
+                <li class="titleList">What are we looking for?
                     <ul>
                         <li class="answer">
+                            One credit of English with a C or better
+                        </li>
+                        <li class="answer">
+                            One credit in Biology or Anatomy/Physiology with a C or better
+                        </li>
+
+                        <li class="answer">
+                            No fake nails, visible tattoos or piercings other than earlobe
+                        </li>
+
+                        <li class="answer">
+                            Students may not be enrolled in two or more West-MEC Central Programs at the same time
+
                         </li>
                     </ul>
                 </li>
@@ -57,8 +76,29 @@
                 </li>
                 <li class="titleList">What times are classes?
                     <ul>
-                        <li class="answer">Classes at the NorthWest Campus take place on weekdays, from 4PM-6PM.
-
+                        <li class="answer">Classes at the NorthWest Campus take place on weekdays. The first session is
+                            from 1PM-3:30PM. The second session is from 4PM-6PM. Students will be scheduled to one of
+                            the two classes.
+                        </li>
+                    </ul>
+                </li>
+                <li class="titleList"> What about transportation?
+                    <ul>
+                        <li class="answer">
+                            Students will be expected to have their own form of transportation to and from West-mec.
+                        </li>
+                    </ul>
+                </li>
+                <li class="titleList"> What's needed to register?
+                    <ul>
+                        <li class="answer">
+                            Proof of residency in West-MEC district boundaries due at time of registration
+                        </li>
+                        <li class="answer">
+                            Copy of birth certificate and immunizations due at time of registration
+                        </li>
+                        <li class="answer">
+                            Immunizations must be up-to-date/ no exemptions
                         </li>
                     </ul>
                 </li>
@@ -69,9 +109,24 @@
                         </li>
                     </ul>
                 </li>
+                <li class="titleList"> Why join the program? Students who complete the program will recieve these
+                    certifications:
+                    <ul>
+                        <li class="answer">
+                            Dental Assisting National Board (DANB)
+                        </li>
+                        <li class="answer">
+                            National Entry Level Dental Assistant (NELDA) Cert
+                        </li>
+                        <li class="answer">
+                            CPR and AED, OSHA-10
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </section>
+    <!-- This section has some extra links that will disappear on mobile viewports. -->
     <section id="extra">
         <p>For addtional information please see the <a class="infoLink" href="Handbook_18-19_complete.pdf">student
                 handbook</a>, or
@@ -83,12 +138,15 @@
 
 
 
-
-    <script src="main.js"></script>
+    <!-- This script tag links the main.js file to the file. It is put at the bottom as a more effective way to run the code in the Js file after the rest of the content loads first. -->
+    <script src="about.js"></script>
 </body>
-<footer>
-    13201 W. Grand Avenue Surprise, AZ 85374 &nbsp; &nbsp;
-    <a href="https://www.instagram.com/westmecnwcdental/" class="fa fa-instagram"></a>
-</footer>
+<div id="footer">
+    <!-- This footer holds the adress of the school as well ad a link the the dental assisting instagram. -->
+    <footer>
+        13201 W. Grand Avenue Surprise, AZ 85374 &nbsp; &nbsp;
+        <a href="https://www.instagram.com/westmecnwcdental/" class="fa fa-instagram"></a>
+    </footer>
+</div>
 
 </html>
